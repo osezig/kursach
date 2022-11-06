@@ -1,12 +1,10 @@
 public class Main {
     private static Employee[] employees = new Employee[10];
-
     public static void printEmployees() {
         for (Employee employee : employees) {
             System.out.println(employee);
         }
     }
-
     public static int calculateTotalSalary() {
         int sum = 0;
         for (Employee employee : employees) {
@@ -25,7 +23,6 @@ public class Main {
         }
         return result;
     }
-
     public static Employee getMaxSalary() {
         Employee result = employees[0];
         double maxSalary = employees[0].getSalary();
@@ -37,7 +34,8 @@ public class Main {
         }
         return result;
     }
-    public static float calculateAverageSalary(){
+
+    public static float calculateAverageSalary() {
         return calculateTotalSalary() / Employee.getCounter();
     }
 
@@ -60,11 +58,8 @@ public class Main {
         System.out.println("Максимальная зарплата = " + getMaxSalary());
         System.out.println("Минимальная зарплата = " + getMinSalary());
         System.out.println("Сумма затрат на зарплаты = " + calculateTotalSalary());
-
-
     }
-
-    }
+}
 
 
 
