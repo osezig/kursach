@@ -40,6 +40,7 @@ public class Employee {
         return fullName + ", " + department + ", " + salary;
 
     }
+    @Override
     public boolean equals(Object o){
         if(o == null || this.getClass() != o.getClass())
             return false;
